@@ -17,9 +17,9 @@ app.use(function(req,res,next){
     // Set custom headers for CORS
     res.header('Access-Control-Allow-Headers', 'Content-type,Accept,X-Access-Token,X-Key,If-Modified-Since,Authorization,multipart/form-data');
     if (req.method == 'OPTIONS') {
-    res.status(200).end();
+        res.status(200).end();
     } else {
-    next();
+        next();
     }
 })
 // db connection
